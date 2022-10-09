@@ -22,41 +22,7 @@ public class SwerveInput_Transform : MonoBehaviour
         finalTransform = transform;
     }
 
-    //private void Update()
-    //{
-    //    Vector3 oldPosition = transform.localPosition;
-    //    List<LeanFinger> finger = leanFingerFilter.UpdateAndGetFingers();
-    //    Vector2 screenDelta = LeanGesture.GetScreenDelta(finger);
-    //    screenDelta.y = 0;
 
-    //    if (screenDelta != Vector2.zero)
-    //    {
-    //        //Vector3 screenPoint = mainCamera.WorldToScreenPoint(transform.position);
-    //        //screenPoint += (Vector3)screenDelta * Sensitivity;
-
-    //        //Vector3 newWorldPoint = mainCamera.ScreenToWorldPoint(screenPoint);
-    //        Vector3 newWorldPoint = screenDelta;
-    //        newWorldPoint.x = Mathf.Clamp(newWorldPoint.x, minX, maxX);
-    //        newWorldPoint.z = 0;
-    //        float factor = CwHelper.DampenFactor(Damping, Time.deltaTime);
-    //        transform.localPosition = Vector3.Lerp(oldPosition, newWorldPoint, factor);
-
-    //    }
-
-    //    //get screen delta
-    //    //convert it to vector 3
-    //    //add it to a ""remaining delta"". this remaining delta tends to remain zero through lerping
-    //    //
-
-    //    //if (Input.GetKey(KeyCode.LeftArrow) && transform.localPosition.x>minX)
-    //    //{
-    //    //    transform.localPosition += Vector3.left* sensitivity * Time.deltaTime;
-    //    //}
-    //    //if (Input.GetKey(KeyCode.RightArrow) && transform.localPosition.x<maxX)
-    //    //{
-    //    //    transform.localPosition += Vector3.right * sensitivity * Time.deltaTime;
-    //    //}
-    //}
     private Vector3 remainingDelta;
     private Transform finalTransform;
     private void Update()
