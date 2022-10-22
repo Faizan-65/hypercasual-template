@@ -9,6 +9,7 @@ TagManager:
   - TurnRight
   - Jump
   - Stairs
+  - End
   layers:
   - Default
   - TransparentFX

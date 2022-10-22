@@ -1,0 +1,1 @@
+﻿public enum Turn { NULL, LEFT, RIGHT }
